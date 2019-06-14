@@ -18,7 +18,7 @@ namespace Cardify.Logic
         {
             new HighestCardScore(),
             new RoyalFlushScore(new SameColorValidator()),
-            new FlushScore()
+            new FlushScore(new SameColorValidator())
         };
 
         public CardScore CalculateScore()

@@ -13,8 +13,10 @@ namespace Cardify.Logic.CardScores
                 .Max();
 
             return maxCardValue == -1 ? 
-                new CardSetScore(false) : 
-                new CardSetScore(true, maxCardValue);
+                new CardSetScore(Name) : 
+                new CardSetScore(Name, maxCardValue);
         }
+
+        public string Name => "HighestCard";
     }
 }

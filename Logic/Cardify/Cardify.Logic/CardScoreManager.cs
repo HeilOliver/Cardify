@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using Cardify.Logic.CardScores;
 using Cardify.Logic.CardScores.Validators;
 using Cardify.Logic.Types;
@@ -16,11 +17,16 @@ namespace Cardify.Logic
         private readonly ISet<ICardScoreCalculator> calculators = new HashSet<ICardScoreCalculator>()
         {
             new HighestCardScore(),
-            new RoyalFlushScore(new SameColorValidator())
+            new RoyalFlushScore(new SameColorValidator()),
+            new FlushScore()
         };
 
         public CardScore CalculateScore()
         {
+            if (HandCards == null || 
+                DeskCards == null)
+                return null;
+
             var cards = HandCards.Cards
                 .Concat(DeskCards.Cards)
                 .Distinct()
@@ -34,19 +40,9 @@ namespace Cardify.Logic
                 .OrderBy(result => result.Score)
                 .FirstOrDefault();
 
-            return new CardScore(score.Name, score.Score);
-        }
-    }
-
-    public class CardScore
-    {
-        public string Name { get; }
-        public int Score { get; }
-
-        public CardScore(string name, int score)
-        {
-            Name = name;
-            Score = score;
+            return score == null ? 
+                null : 
+                new CardScore(score.Name, score.Score);
         }
     }
 }

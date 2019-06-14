@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Cardify.Logic.CardScores;
+using Cardify.Logic.CardScores.Validators;
 using Cardify.Logic.Types;
 using NSubstitute;
 using NUnit.Framework;
@@ -7,7 +8,7 @@ using NUnit.Framework;
 namespace Cardify.Logic.Test.CardScores
 {
     [TestFixture]
-    public class StreetScoreTests : CardTestBase
+    public class StraightFlushScoreTests : CardTestBase
     {
         [SetUp]
         public void SetUp()
@@ -15,16 +16,19 @@ namespace Cardify.Logic.Test.CardScores
 
         }
 
-        private StreetScore CreateStreetScore()
+        private ISetValidator GenerateSetValidator()
         {
-            return new StreetScore();
+            var setValidator = Substitute.For<ISetValidator>();
+            return setValidator;
         }
 
         [Test]
-        public void Score_ValidStreetSet_IsValid()
+        public void Score_ValidStraightFlushSet_IsValid()
         {
             // Arrange
-            var unitUnderTest = this.CreateStreetScore();
+            var setValidator = GenerateSetValidator();
+            var unitUnderTest = new StraightFlushScore(setValidator);
+            setValidator.Validate(Arg.Any<CardSet>()).Returns(true);
             CardSet set = new CardSet(new HashSet<Card>()
             {
                 GenerateCard(CardValue.Four),
@@ -44,10 +48,12 @@ namespace Cardify.Logic.Test.CardScores
 
 
         [Test]
-        public void Score_ValidStreetSetWithAceAtEnd_IsValid()
+        public void Score_ValidStraightFlushSetWithAceAtEnd_IsValid()
         {
             // Arrange
-            var unitUnderTest = this.CreateStreetScore();
+            var setValidator = GenerateSetValidator();
+            var unitUnderTest = new StraightFlushScore(setValidator);
+            setValidator.Validate(Arg.Any<CardSet>()).Returns(true);
             CardSet set = new CardSet(new HashSet<Card>()
             {
                 GenerateCard(CardValue.Ten),
@@ -66,10 +72,12 @@ namespace Cardify.Logic.Test.CardScores
         }
 
         [Test]
-        public void Score_ValidStreetSetWithAceAtBeginning_IsValid()
+        public void Score_ValidStraightFlushSetWithAceAtBeginning_IsValid()
         {
             // Arrange
-            var unitUnderTest = this.CreateStreetScore();
+            var setValidator = GenerateSetValidator();
+            var unitUnderTest = new StraightFlushScore(setValidator);
+            setValidator.Validate(Arg.Any<CardSet>()).Returns(true);
             CardSet set = new CardSet(new HashSet<Card>()
             {
                 GenerateCard(CardValue.Ace),
@@ -88,10 +96,12 @@ namespace Cardify.Logic.Test.CardScores
         }
 
         [Test]
-        public void Score_ValidStreetSetUnsorted_IsValid()
+        public void Score_ValidStraightFlushSetUnsorted_IsValid()
         {
             // Arrange
-            var unitUnderTest = this.CreateStreetScore();
+            var setValidator = GenerateSetValidator();
+            var unitUnderTest = new StraightFlushScore(setValidator);
+            setValidator.Validate(Arg.Any<CardSet>()).Returns(true);
             CardSet set = new CardSet(new HashSet<Card>()
             {
                 GenerateCard(CardValue.Four),
@@ -110,10 +120,12 @@ namespace Cardify.Logic.Test.CardScores
         }
 
         [Test]
-        public void Score_InvalidStreetSet_IsNotValid()
+        public void Score_InvalidStraightFlushSet_IsNotValid()
         {
             // Arrange
-            var unitUnderTest = this.CreateStreetScore();
+            var setValidator = GenerateSetValidator();
+            var unitUnderTest = new StraightFlushScore(setValidator);
+            setValidator.Validate(Arg.Any<CardSet>()).Returns(true);
             CardSet set = new CardSet(new HashSet<Card>()
             {
                 GenerateCard(CardValue.Four),
@@ -121,6 +133,30 @@ namespace Cardify.Logic.Test.CardScores
                 GenerateCard(CardValue.Ten),
                 GenerateCard(CardValue.Nine),
                 GenerateCard(CardValue.Six),
+            });
+
+            // Act
+            var result = unitUnderTest.Score(
+                set);
+
+            // Assert
+            Assert.False(result.IsValid);
+        }
+
+        [Test]
+        public void Score_StraightFlushSetWithDifColors_IsNotValid()
+        {
+            // Arrange
+            var setValidator = GenerateSetValidator();
+            var unitUnderTest = new StraightFlushScore(setValidator);
+            setValidator.Validate(Arg.Any<CardSet>()).Returns(false);
+            CardSet set = new CardSet(new HashSet<Card>()
+            {
+                GenerateCard(CardValue.Ten),
+                GenerateCard(CardValue.Jack, CardColor.Cucumber),
+                GenerateCard(CardValue.Queen),
+                GenerateCard(CardValue.King),
+                GenerateCard(CardValue.Ace)
             });
 
             // Act

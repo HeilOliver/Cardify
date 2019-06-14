@@ -20,7 +20,7 @@ namespace Cardify.Logic.Test.CardScores
 
             // Assert
             Assert.False(result.IsValid);
-            Assert.Equals(-1, result.Score);
+            Assert.AreEqual(-1, result.Score);
         }
     }
 }

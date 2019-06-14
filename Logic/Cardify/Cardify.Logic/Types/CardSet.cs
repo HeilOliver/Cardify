@@ -8,6 +8,11 @@ namespace Cardify.Logic.Types
     {
         private readonly ISet<Card> cards;
 
+        public CardSet(ISet<Card> cards)
+        {
+            this.cards = cards;
+        }
+
         public CardSet()
         {
             cards = new HashSet<Card>();

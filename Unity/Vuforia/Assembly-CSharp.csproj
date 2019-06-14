@@ -63,12 +63,12 @@
      <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
      <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
      <None Include="Assets\StreamingAssets\Vuforia\FirstProject_DB.xml" />
+     <None Include="Assets\StreamingAssets\Vuforia\Cardify.xml" />
      <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
      <None Include="Assets\Vuforia\Databases\Emulator\VuforiaEmulator.xml" />
      <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
      <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
      <None Include="Assets\Vuforia\Shaders\DepthContour.shader" />
-     <None Include="Assets\StreamingAssets\Vuforia\Cardify.xml" />
      <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/sge/Downloads/project/Cardify/Unity/Vuforia/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

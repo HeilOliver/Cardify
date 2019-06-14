@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="t3CloseUp" size="320.000000 739.710144" />
-    <ImageTarget name="TJsmall" size="320.000000 725.683044" />
-    <ImageTarget name="TJAll" size="320.000000 465.812805" />
-    <ImageTarget name="t3All" size="320.000000 474.993744" />
+    <ImageTarget name="CQ" size="320.000000 438.451019" />
+    <ImageTarget name="CK" size="320.000000 448.000000" />
+    <ImageTarget name="CJ" size="320.000000 465.812805" />
+    <ImageTarget name="CA" size="320.000000 438.899078" />
+    <ImageTarget name="C10" size="320.000000 439.011230" />
+    <ImageTarget name="C9" size="320.000000 448.365723" />
+    <ImageTarget name="C8" size="320.000000 446.978333" />
+    <ImageTarget name="C7" size="320.000000 442.181824" />
+    <ImageTarget name="C6" size="320.000000 450.604645" />
+    <ImageTarget name="C5" size="320.000000 440.595642" />
+    <ImageTarget name="C4" size="320.000000 444.789062" />
+    <ImageTarget name="C3" size="320.000000 474.993744" />
+    <ImageTarget name="C2" size="320.000000 448.731415" />
   </Tracking>
 </QCARConfig>

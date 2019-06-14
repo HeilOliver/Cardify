@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 494}
   m_MaxSize: {x: 10004, y: 14044}
   vertical: 1
-  controlID: 86
+  controlID: 63
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 152
+  controlID: 119
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,7 +201,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &9
 MonoBehaviour:
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 444}
   m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 129
+  controlID: 120
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -427,20 +427,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Packages
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Packages
+  - Assets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\sge\Downloads\project\Cardify\Unity\Vuforia
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 59}
-    m_SelectedIDs: ffffff7f
-    m_LastClickedID: 2147483647
-    m_ExpandedIDs: 00000000862c000030300000723100007431000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 862c0000
+    m_LastClickedID: 11398
+    m_ExpandedIDs: 00000000862c0000423000002e3300003033000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -468,7 +468,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000862c0000303000007231000074310000
+    m_ExpandedIDs: 00000000862c0000423000002e33000030330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -587,10 +587,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: d4c8ffff08c9ffff1ccbffffb2d9ffffb8deffff14e2ffffcae3ffff60fbfffff8300000
+      scrollPos: {x: 0, y: 613}
+      m_SelectedIDs: 5ab0ffff
+      m_LastClickedID: -20390
+      m_ExpandedIDs: 58b0ffff6ab0ffff6cb0ffff6eb0ffff70b0ffff72b0ffff74b0ffff76b0ffff78b0ffff7ab0ffff7cb0ffff80b0ffff94b0ffffa2b0ffff08d4ffff0cd4ffff16d4ffff1cd4ffff24d4ffff26d4ffff2cd4ffff30d4ffff32d4ffff36d4ffff3ad4ffffe2f3ffffe6f3ffffeaf3fffff0f3fffff2f3ffff02f4ffff04f4ffff0af4ffff0cf4ffff18f4ffff1af4ffff1cf4ffff1ef4ffff8efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -650,9 +650,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 169.49997, y: 202.5, z: 237.5}
+    m_Target: {x: 148.56012, y: 190.46675, z: 111.694954}
     speed: 2
-    m_Value: {x: 169.49992, y: 202.49995, z: 237.50002}
+    m_Value: {x: 148.56012, y: 190.46675, z: 111.69496}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -685,9 +685,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.7071068, y: 0, z: -0, w: -0.7071068}
   m_Size:
-    m_Target: 1466.8668
+    m_Target: 1629.2941
     speed: 2
-    m_Value: 1466.8667
+    m_Value: 1629.2941
   m_Ortho:
     m_Target: 0
     speed: 2

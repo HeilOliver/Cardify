@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="SQ" size="320.000000 440.673401" />
+    <ImageTarget name="SK" size="320.000000 450.000000" />
+    <ImageTarget name="SJ" size="320.000000 462.097900" />
+    <ImageTarget name="SA" size="320.000000 452.286377" />
+    <ImageTarget name="S10" size="320.000000 443.661011" />
+    <ImageTarget name="S9" size="320.000000 437.705292" />
+    <ImageTarget name="S8" size="320.000000 433.536713" />
+    <ImageTarget name="S7" size="320.000000 461.473694" />
+    <ImageTarget name="S6" size="320.000000 440.542999" />
+    <ImageTarget name="S5" size="320.000000 449.479767" />
+    <ImageTarget name="S4" size="320.000000 434.103577" />
+    <ImageTarget name="S3" size="320.000000 446.767975" />
+    <ImageTarget name="S2" size="320.000000 435.575623" />
+    <ImageTarget name="GQ" size="320.000000 447.491486" />
+    <ImageTarget name="GK" size="320.000000 450.550995" />
+    <ImageTarget name="GJ" size="320.000000 442.739716" />
+    <ImageTarget name="GA" size="320.000000 456.036865" />
+    <ImageTarget name="G10" size="320.000000 436.751953" />
+    <ImageTarget name="G9" size="320.000000 440.632050" />
+    <ImageTarget name="G8" size="320.000000 441.404297" />
+    <ImageTarget name="G7" size="320.000000 444.342865" />
+    <ImageTarget name="G6" size="320.000000 440.181000" />
+    <ImageTarget name="G5" size="320.000000 448.000000" />
+    <ImageTarget name="G4" size="320.000000 438.346375" />
+    <ImageTarget name="G3" size="320.000000 443.521454" />
+    <ImageTarget name="G2" size="320.000000 442.320831" />
+    <ImageTarget name="CuQ" size="320.000000 445.555542" />
+    <ImageTarget name="CuK" size="320.000000 451.939606" />
+    <ImageTarget name="CuJ" size="320.000000 462.559235" />
+    <ImageTarget name="CuA" size="320.000000 447.128265" />
+    <ImageTarget name="Cu10" size="320.000000 433.431488" />
+    <ImageTarget name="Cu9" size="320.000000 444.321838" />
+    <ImageTarget name="Cu8" size="320.000000 443.894623" />
+    <ImageTarget name="Cu7" size="320.000000 440.775360" />
+    <ImageTarget name="Cu6" size="320.000000 436.558655" />
+    <ImageTarget name="Cu5" size="320.000000 447.198181" />
+    <ImageTarget name="Cu4" size="320.000000 435.515686" />
+    <ImageTarget name="Cu3" size="320.000000 442.623718" />
+    <ImageTarget name="Cu2" size="320.000000 431.841248" />
     <ImageTarget name="CQ" size="320.000000 438.451019" />
     <ImageTarget name="CK" size="320.000000 448.000000" />
     <ImageTarget name="CJ" size="320.000000 465.812805" />

@@ -18,20 +18,22 @@ namespace Cardify.Logic.CardScores
             bool sameColor = colorValidator.Validate(set);
 
             if (!sameColor)
-                return new CardSetScore(false);
+                return new CardSetScore(Name);
 
             if (set.Cards
                     .Select(card => card.Value)
                     .Distinct()
                     .ToList().Count != 5)
-                return new CardSetScore(false);
+                return new CardSetScore(Name);
 
             bool valid = set.Cards.All(Validate);
 
             return valid ? 
-                new CardSetScore(true, 12) : 
-                new CardSetScore(false);
+                new CardSetScore(Name, 12) : 
+                new CardSetScore(Name);
         }
+
+        public string Name => "RoyalFlush";
 
         private bool Validate(Card card)
         {

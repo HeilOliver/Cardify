@@ -8,9 +8,9 @@ namespace Cardify.Logic.Types
     {
         private readonly ISet<Card> cards;
 
-        public CardSet(ISet<Card> cards)
+        public CardSet(ICollection<Card> cards)
         {
-            this.cards = cards;
+            this.cards = new HashSet<Card>(cards);
         }
 
         public CardSet()

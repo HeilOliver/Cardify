@@ -29,7 +29,7 @@ namespace Cardify.Logic.Test.CardScores
         {
             // Arrange
             var setValidator = GenerateSetValidator();
-            var unitUnderTest = new RoyalFlushScore(setValidator);
+            var unitUnderTest = new FlushScore(setValidator);
             setValidator.Validate(Arg.Any<CardSet>()).Returns(true);
             CardSet set = new CardSet(new HashSet<Card>()
             {
@@ -54,7 +54,7 @@ namespace Cardify.Logic.Test.CardScores
         {
             // Arrange
             var setValidator = GenerateSetValidator();
-            var unitUnderTest = new RoyalFlushScore(setValidator);
+            var unitUnderTest = new FlushScore(setValidator);
             setValidator.Validate(Arg.Any<CardSet>()).Returns(false);
             CardSet set = new CardSet(new HashSet<Card>()
             {

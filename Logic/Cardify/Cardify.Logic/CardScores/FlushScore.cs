@@ -7,15 +7,20 @@ namespace Cardify.Logic.CardScores
     {
         private readonly ISetValidator validator;
 
+        public FlushScore(ISetValidator validator)
+        {
+            this.validator = validator;
+        }
+
         public CardSetScore Score(CardSet set)
         {
             bool isValid
                 = validator.Validate(set);
 
             if (isValid)
-                return new CardSetScore(Name);
+                return new CardSetScore(Name, 5);
 
-            return new CardSetScore(Name, 5);
+            return new CardSetScore(Name);
         }
 
         public string Name => "Flush";

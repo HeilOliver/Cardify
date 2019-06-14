@@ -34,5 +34,10 @@ namespace Cardify.Logic.Types
                 return ((int) Color * 397) ^ (int) Value;
             }
         }
+
+        public override string ToString()
+        {
+            return $"{nameof(Color)}: {Color}, {nameof(Value)}: {Value}";
+        }
     }
 }

@@ -1,14 +1,22 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp.dll:
+    - checkCards
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimatorControllerTool
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     - UnityEngine.UI.Text
     Vuforia.UnityExtensions.dll:
     - Vuforia.ImageTargetBehaviour
@@ -19,6 +27,7 @@ ScriptsOnlyBuild:
     - DefaultInitializationErrorHandler
     - DefaultTrackableEventHandler
     com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
     Assets/FirstScene.unity:
@@ -61,9 +70,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9440}
     - Class: 114
+      Script: {instanceID: 9468}
+    - Class: 114
       Script: {instanceID: 9470}
     - Class: 114
+      Script: {instanceID: 9476}
+    - Class: 114
       Script: {instanceID: 9482}
+    - Class: 114
+      Script: {instanceID: 9490}
+    - Class: 114
+      Script: {instanceID: 9526}
     - Class: 114
       Script: {instanceID: 9528}
     - Class: 114
@@ -86,6 +103,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10688}
     - Class: 114
       Script: {instanceID: 10800}
+    - Class: 114
+      Script: {instanceID: 11032}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -95,6 +114,8 @@ ScriptsOnlyBuild:
     - Class: 136
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -1247,6 +1268,12 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: 4a18ca8a80a7de46ac80fdcf9ea20507
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: checkCards
+  - hash:
+      serializedVersion: 2
       Hash: e6ae40841db498b6e673877ac45ad208
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -1698,4 +1725,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/FirstScene.unity
-  playerPath: C:/Users/sge/Downloads/project/Cardify/Unity/Vuforia/build/firstproject.apk
+  playerPath: C:/Users/sge/Downloads/project/Cardify/Unity/Vuforia/build/firstBuild.apk

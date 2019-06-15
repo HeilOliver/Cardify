@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\checkCards.cs" />
      <Compile Include="Assets\CoinThreeScript.cs" />
      <Compile Include="Assets\SpinScript.cs" />
      <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />

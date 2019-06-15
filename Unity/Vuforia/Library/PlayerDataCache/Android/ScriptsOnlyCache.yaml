@@ -8,8 +8,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimatorControllerTool
-    UnityEditor.TestRunner.dll:
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -27,7 +25,6 @@ ScriptsOnlyBuild:
     - DefaultInitializationErrorHandler
     - DefaultTrackableEventHandler
     com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
     Assets/FirstScene.unity:
@@ -88,21 +85,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9868}
     - Class: 114
-      Script: {instanceID: 10028}
+      Script: {instanceID: 10030}
     - Class: 114
-      Script: {instanceID: 10050}
-    - Class: 114
-      Script: {instanceID: 10058}
+      Script: {instanceID: 10052}
     - Class: 114
       Script: {instanceID: 10060}
     - Class: 114
-      Script: {instanceID: 10416}
+      Script: {instanceID: 10062}
     - Class: 114
-      Script: {instanceID: 10576}
+      Script: {instanceID: 10418}
     - Class: 114
-      Script: {instanceID: 10708}
+      Script: {instanceID: 10578}
     - Class: 114
-      Script: {instanceID: 11058}
+      Script: {instanceID: 10710}
+    - Class: 114
+      Script: {instanceID: 11060}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1717,4 +1714,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/FirstScene.unity
-  playerPath: D:/Cardify/Unity/Vuforia/ABc.apk
+  playerPath: C:/Users/sge/Downloads/project/Cardify/Unity/Vuforia/build/build.apk

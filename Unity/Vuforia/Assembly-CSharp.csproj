@@ -71,6 +71,7 @@
      <Compile Include="Assets\Cardify.Logic\CardScores\Validators\SameColorValidator.cs" />
      <Compile Include="Assets\Cardify.Logic\CardSetScore.cs" />
      <Compile Include="Assets\Cardify.Logic\ICardScoreCalculator.cs" />
+     <Compile Include="Assets\Cardify.Logic\obj\Debug\netstandard2.0\Cardify.Logic.AssemblyInfo.cs" />
      <Compile Include="Assets\Cardify.Logic\Types\Card.cs" />
      <Compile Include="Assets\Cardify.Logic\Types\CardColor.cs" />
      <Compile Include="Assets\Cardify.Logic\Types\CardSet.cs" />

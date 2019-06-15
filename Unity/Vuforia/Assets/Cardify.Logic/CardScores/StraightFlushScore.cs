@@ -17,10 +17,11 @@ namespace Cardify.Logic.CardScores
         public new CardSetScore Score(CardSet set)
         {
             bool validate = colorValidator.Validate(set);
+            var score = base.Score(set);
 
-            return !validate ? 
-                new CardSetScore(Name) : 
-                base.Score(set);
+            return validate && score.IsValid ? 
+                new CardSetScore(Name, 9) : 
+                new CardSetScore(Name);
         }
     }
 }

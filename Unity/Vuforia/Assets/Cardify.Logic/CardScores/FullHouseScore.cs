@@ -9,11 +9,33 @@ namespace Cardify.Logic.CardScores
 
         public CardSetScore Score(CardSet set)
         {
-            var groups = GroupCardSet(set);
-            bool fourOfAKind = groups.Select(kv => kv.Value).Any(a => a.Count > 2 && groups.Select(kv => kv.Value).Any(b => b.Count > 3));
-            if (fourOfAKind)
+            var dictionary = set.Cards
+                .GroupBy(card => card.Value, card => card)
+                .ToDictionary(key => key.Key, val => val.ToList());
+
+            bool foundPair = false;
+            bool foundTribble = false;
+            foreach (var value in dictionary.Values)
             {
-                return new CardSetScore(Name, 4);
+                int valueCount = value.Count;
+
+                if (!foundTribble && valueCount >= 3)
+                {
+                    foundTribble = true;
+                    continue;
+                }
+
+                if (!foundPair && valueCount >= 2)
+                {
+                    foundPair = true;
+                    continue;
+                }
+                break;
+            }
+
+            if (foundPair && foundTribble)
+            {
+                return new CardSetScore(Name, 7);
             }
             return new CardSetScore(Name);
         }

@@ -11,12 +11,13 @@ namespace Cardify.Logic.CardScores
                 .OrderBy(card => card.Value)
                 .ToList();
 
-            if (!cards.Any())
+            if (!cards.Any() || cards.Count < 5)
                 return new CardSetScore(Name);
 
             var singleValues = cards
                 .Select(card => card.Value)
                 .Distinct()
+                .OrderBy(value => value)
                 .ToList();
 
             if (singleValues.Contains(CardValue.Ace))
@@ -46,7 +47,7 @@ namespace Cardify.Logic.CardScores
             }
 
             return streetCount == 4 ? 
-                new CardSetScore(Name, 6) : 
+                new CardSetScore(Name, 5) : 
                 new CardSetScore(Name);
         }
 

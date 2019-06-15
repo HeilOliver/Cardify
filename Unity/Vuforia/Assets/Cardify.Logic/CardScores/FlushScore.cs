@@ -1,4 +1,5 @@
-﻿using Cardify.Logic.CardScores.Validators;
+﻿using System.Linq;
+using Cardify.Logic.CardScores.Validators;
 using Cardify.Logic.Types;
 
 namespace Cardify.Logic.CardScores
@@ -14,11 +15,14 @@ namespace Cardify.Logic.CardScores
 
         public CardSetScore Score(CardSet set)
         {
-            bool isValid
-                = validator.Validate(set);
+            var dictionary = set.Cards
+                .GroupBy(card => card.Color, card => card)
+                .ToDictionary(key => key.Key, val => val.ToList());
+
+            bool isValid = dictionary.Values.Any(collection => collection.Count>= 5);
 
             if (isValid)
-                return new CardSetScore(Name, 5);
+                return new CardSetScore(Name, 6);
 
             return new CardSetScore(Name);
         }

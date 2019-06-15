@@ -27,6 +27,7 @@ ScriptsOnlyBuild:
     - DefaultInitializationErrorHandler
     - DefaultTrackableEventHandler
     com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
     Assets/FirstScene.unity:
@@ -61,47 +62,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9326}
     - Class: 114
+      Script: {instanceID: 9382}
+    - Class: 114
       Script: {instanceID: 9384}
     - Class: 114
-      Script: {instanceID: 9386}
+      Script: {instanceID: 9426}
     - Class: 114
-      Script: {instanceID: 9428}
+      Script: {instanceID: 9444}
     - Class: 114
-      Script: {instanceID: 9446}
+      Script: {instanceID: 9472}
     - Class: 114
       Script: {instanceID: 9474}
     - Class: 114
-      Script: {instanceID: 9476}
+      Script: {instanceID: 9480}
     - Class: 114
-      Script: {instanceID: 9482}
+      Script: {instanceID: 9486}
     - Class: 114
-      Script: {instanceID: 9488}
+      Script: {instanceID: 9494}
     - Class: 114
-      Script: {instanceID: 9496}
+      Script: {instanceID: 9530}
     - Class: 114
       Script: {instanceID: 9532}
     - Class: 114
-      Script: {instanceID: 9534}
+      Script: {instanceID: 9768}
     - Class: 114
-      Script: {instanceID: 9772}
+      Script: {instanceID: 9868}
     - Class: 114
-      Script: {instanceID: 9872}
+      Script: {instanceID: 10028}
     - Class: 114
-      Script: {instanceID: 10032}
+      Script: {instanceID: 10050}
     - Class: 114
-      Script: {instanceID: 10054}
+      Script: {instanceID: 10058}
     - Class: 114
-      Script: {instanceID: 10062}
+      Script: {instanceID: 10060}
     - Class: 114
-      Script: {instanceID: 10064}
+      Script: {instanceID: 10416}
     - Class: 114
-      Script: {instanceID: 10424}
+      Script: {instanceID: 10576}
     - Class: 114
-      Script: {instanceID: 10588}
+      Script: {instanceID: 10708}
     - Class: 114
-      Script: {instanceID: 10722}
-    - Class: 114
-      Script: {instanceID: 11076}
+      Script: {instanceID: 11058}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1259,7 +1260,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 4a18ca8a80a7de46ac80fdcf9ea20507
+      Hash: e426dbd0a5324f351c72d7a6e472beae
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: checkCards
@@ -1716,4 +1717,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/FirstScene.unity
-  playerPath: C:/Users/sge/Downloads/project/Cardify/Unity/Vuforia/build/firstBuild.apk
+  playerPath: D:/Cardify/Unity/Vuforia/ABc.apk

@@ -14,7 +14,7 @@ namespace Cardify.Logic.CardScores
 
             return maxCardValue == -1 ? 
                 new CardSetScore(Name) : 
-                new CardSetScore(Name, maxCardValue);
+                new CardSetScore(Name, 0);
         }
 
         public string Name => "HighestCard";

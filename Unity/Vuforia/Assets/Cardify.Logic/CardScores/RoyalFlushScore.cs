@@ -20,16 +20,10 @@ namespace Cardify.Logic.CardScores
             if (!sameColor)
                 return new CardSetScore(Name);
 
-            if (set.Cards
-                    .Select(card => card.Value)
-                    .Distinct()
-                    .ToList().Count != 5)
-                return new CardSetScore(Name);
-
             bool valid = set.Cards.All(Validate);
 
             return valid ? 
-                new CardSetScore(Name, 12) : 
+                new CardSetScore(Name, 10) : 
                 new CardSetScore(Name);
         }
 

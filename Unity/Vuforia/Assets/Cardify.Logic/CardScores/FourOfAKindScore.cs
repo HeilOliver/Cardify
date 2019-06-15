@@ -9,11 +9,16 @@ namespace Cardify.Logic.CardScores
 
         public CardSetScore Score(CardSet set)
         {
-            var groups = GroupCardSet(set);
-            bool fourOfAKind = groups.Select(kv => kv.Value).Any(a => a.Count > 4);
-            if (fourOfAKind)
+            var dictionary = set.Cards
+                .GroupBy(card => card.Value, card => card)
+                .ToDictionary(key => key.Key, val => val.ToList());
+
+            bool isValid = dictionary.Values
+                .Any(collection => collection.Count >= 4);
+
+            if (isValid)
             {
-                return new CardSetScore(Name, 4);
+                return new CardSetScore(Name, 8);
             }
             return new CardSetScore(Name);
         }

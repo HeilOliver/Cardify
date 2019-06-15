@@ -20,7 +20,12 @@ namespace Cardify.Logic
             new RoyalFlushScore(new SameColorValidator()),
             new FlushScore(new SameColorValidator()),
             new StraightFlushScore(new SameColorValidator()),
-            new StreetScore()
+            new StreetScore(),
+            new PairScore(),
+            new DoublePairScore(),
+            new FullHouseScore(),
+            new FourOfAKindScore(),
+            new ThreeOFAKindScore()
         };
 
         public CardScore CalculateScore()
@@ -36,15 +41,34 @@ namespace Cardify.Logic
 
             var cardSet = new CardSet(cards);
 
+            bool sameColor = new SameColorValidator().Validate(cardSet);
+
             var score = calculators
                 .Select(calculator => calculator.Score(cardSet))
                 .Where(result => result.IsValid)
-                .OrderBy(result => result.Score)
+                .OrderByDescending(result => result.Score)
                 .FirstOrDefault();
+
+            string name = "";
+            foreach (var setScore in calculators
+                .Select(calculator => calculator.Score(cardSet))
+                .Where(result => result.IsValid)
+                .OrderByDescending(result => result.Score))
+            {
+                name = name + "\n -" + setScore.Name;
+            }
+
+            string cardText = "";
+            foreach (var card in cards)
+            {
+             cardText = cardText + $"\n {card.Color}-{card.Value}";
+            }
+
+            name = $"Get - {cards.Count} - Same {sameColor}\n" + name;
 
             return score == null ? 
                 null : 
-                new CardScore(score.Name, score.Score);
+                new CardScore(name, score.Score, cardText);
         }
     }
 }

@@ -12,6 +12,7 @@ public class checkCards : MonoBehaviour
 {
 
     public Text cardText;
+    public Text CardSet;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,7 @@ public class checkCards : MonoBehaviour
 
         //string resultString = result?.Name ?? "None";
         cardText.text = result?.Name ?? "None";
+        CardSet.text = result?.Cards ?? "None";
     }
 
     private GameObject[] cards;
@@ -48,7 +50,6 @@ public class checkCards : MonoBehaviour
     private CardSet searchforCards()
     {
         cards = FindObjectsOfType(typeof(GameObject)) as GameObject[];
-        String outText = "";
         CardSet cs = new CardSet();
         
         for (var i = 0; i < cards.Length; i++)

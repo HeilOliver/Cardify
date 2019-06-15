@@ -55,6 +55,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Cardify.Logic\CardScore.cs" />
+     <Compile Include="Assets\Cardify.Logic\CardScoreManager.cs" />
+     <Compile Include="Assets\Cardify.Logic\CardScores\FlushScore.cs" />
+     <Compile Include="Assets\Cardify.Logic\CardScores\FourOfAKindScore.cs" />
+     <Compile Include="Assets\Cardify.Logic\CardScores\FullHouseScore.cs" />
+     <Compile Include="Assets\Cardify.Logic\CardScores\HighestCardScore.cs" />
+     <Compile Include="Assets\Cardify.Logic\CardScores\PairScore.cs" />
+     <Compile Include="Assets\Cardify.Logic\CardScores\PairScoreBase.cs" />
+     <Compile Include="Assets\Cardify.Logic\CardScores\RoyalFlushScore.cs" />
+     <Compile Include="Assets\Cardify.Logic\CardScores\StraightFlushScore.cs" />
+     <Compile Include="Assets\Cardify.Logic\CardScores\StreetScore.cs" />
+     <Compile Include="Assets\Cardify.Logic\CardScores\ThreeOfAKindScore.cs" />
+     <Compile Include="Assets\Cardify.Logic\CardScores\Validators\ISetValidator.cs" />
+     <Compile Include="Assets\Cardify.Logic\CardScores\Validators\SameColorValidator.cs" />
+     <Compile Include="Assets\Cardify.Logic\CardSetScore.cs" />
+     <Compile Include="Assets\Cardify.Logic\ICardScoreCalculator.cs" />
+     <Compile Include="Assets\Cardify.Logic\Types\Card.cs" />
+     <Compile Include="Assets\Cardify.Logic\Types\CardColor.cs" />
+     <Compile Include="Assets\Cardify.Logic\Types\CardSet.cs" />
+     <Compile Include="Assets\Cardify.Logic\Types\CardValue.cs" />
      <Compile Include="Assets\checkCards.cs" />
      <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
      <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />

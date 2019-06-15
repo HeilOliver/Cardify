@@ -60,51 +60,51 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9322}
-    - Class: 114
-      Script: {instanceID: 9376}
+      Script: {instanceID: 9324}
     - Class: 114
       Script: {instanceID: 9378}
     - Class: 114
-      Script: {instanceID: 9420}
+      Script: {instanceID: 9380}
     - Class: 114
-      Script: {instanceID: 9438}
+      Script: {instanceID: 9422}
     - Class: 114
-      Script: {instanceID: 9466}
+      Script: {instanceID: 9440}
     - Class: 114
       Script: {instanceID: 9468}
     - Class: 114
-      Script: {instanceID: 9474}
+      Script: {instanceID: 9470}
     - Class: 114
-      Script: {instanceID: 9480}
+      Script: {instanceID: 9476}
     - Class: 114
-      Script: {instanceID: 9488}
+      Script: {instanceID: 9482}
     - Class: 114
-      Script: {instanceID: 9524}
+      Script: {instanceID: 9490}
     - Class: 114
       Script: {instanceID: 9526}
     - Class: 114
-      Script: {instanceID: 9758}
+      Script: {instanceID: 9528}
     - Class: 114
-      Script: {instanceID: 9856}
+      Script: {instanceID: 9760}
     - Class: 114
-      Script: {instanceID: 10012}
+      Script: {instanceID: 9858}
     - Class: 114
-      Script: {instanceID: 10034}
+      Script: {instanceID: 10014}
     - Class: 114
-      Script: {instanceID: 10042}
+      Script: {instanceID: 10036}
     - Class: 114
       Script: {instanceID: 10044}
     - Class: 114
-      Script: {instanceID: 10398}
+      Script: {instanceID: 10046}
     - Class: 114
-      Script: {instanceID: 10556}
+      Script: {instanceID: 10400}
     - Class: 114
-      Script: {instanceID: 10686}
+      Script: {instanceID: 10558}
     - Class: 114
-      Script: {instanceID: 10798}
+      Script: {instanceID: 10688}
     - Class: 114
-      Script: {instanceID: 14820}
+      Script: {instanceID: 10800}
+    - Class: 114
+      Script: {instanceID: 11032}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1268,6 +1268,12 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: 4a18ca8a80a7de46ac80fdcf9ea20507
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: checkCards
+  - hash:
+      serializedVersion: 2
       Hash: e6ae40841db498b6e673877ac45ad208
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -1716,13 +1722,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 4a18ca8a80a7de46ac80fdcf9ea20507
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: checkCards
   platform: 13
   scenePathNames:
   - Assets/FirstScene.unity
-  playerPath: C:/Users/Meli/Desktop/Cardify/Cardify/Unity/Vuforia/build/version1.1.apk
+  playerPath: C:/Users/sge/Downloads/project/Cardify/Unity/Vuforia/build/firstBuild.apk

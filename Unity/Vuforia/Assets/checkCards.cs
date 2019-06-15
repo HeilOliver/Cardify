@@ -45,7 +45,7 @@ public class checkCards : MonoBehaviour
                 if(status == TrackableBehaviour.Status.TRACKED)
                 {
                     Debug.LogWarning(cards[i].name);
-                    outText = outText + cards[i].name;
+                    outText = outText + cards[i].name + ", ";
                 }
             }
         }

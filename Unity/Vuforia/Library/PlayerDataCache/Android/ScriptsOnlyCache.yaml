@@ -27,7 +27,6 @@ ScriptsOnlyBuild:
     - DefaultInitializationErrorHandler
     - DefaultTrackableEventHandler
     com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
     Assets/FirstScene.unity:
@@ -101,8 +100,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10558}
     - Class: 114
       Script: {instanceID: 10688}
-    - Class: 114
-      Script: {instanceID: 10800}
     - Class: 114
       Script: {instanceID: 11032}
     - Class: 115
@@ -1080,12 +1077,6 @@ ScriptsOnlyBuild:
     assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: Vuforia
     className: WireframeTrackableEventHandler
-  - hash:
-      serializedVersion: 2
-      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SpinScript
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
